@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1280px;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+input {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+
+//   header qismi uchun
+.header {
+  background-color: #1c1e53;
+  position: fixed;
+  background-color: #1c1e53;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  .container {
+    .header-main {
+      display: flex;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      align-items: center;
+      justify-content: space-between;
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        .link {
+          color: #bbbbcb;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 28px;
+        }
+        .link:hover {
+          transition: 0.3s;
+          color: #fff;
+        }
+      }
+      .hamburger {
+        cursor: pointer;
+        display: none;
+        .bar {
+          display: block;
+        }
+      }
+      .header-btn {
+        .btn-1 {
+          padding: 16px 48px;
+          color: #fff;
+          background-color: #1c1e53;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 28px;
+          border-radius: 41px;
+          border: 2px solid rgba(244, 246, 252, 0.2);
+        }
+        .btn-1:hover {
+          background-color: #fff;
+          color: #1c1e53;
+          border: 2px solid #1c1e53;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+//  bu yerda header qsimi uchun media qismi
+@media (max-width: 950px) {
+  .header {
+    position: fixed;
+    .container {
+      .header-main {
+        display: flex;
+        justify-content: none;
+        gap: 10px;
+        .nav-links {
+          display: flex;
+          gap: 12px;
+        }
+        .aside-btn {
+          .btn-1 {
+            padding: 8px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    .header-main {
+      .nav-links {
+        display: none;
+      }
+      .hamburger {
+        display: block;
+      }
+    }
+  }
+}
+//     main qismi uchun boladi
+//  aside qismi uchun
+.aside {
+  padding-top: 126px;
+  background-color: #1c1e53;
+  .aside-main {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    .aside-left {
+      margin-top: 100px;
+      .aside-title {
+        .title {
+          color: #fff;
+          font-size: 54px;
+          font-weight: 600;
+          line-height: 74px;
+          max-width: 582px;
+        }
+        .par-aside {
+          max-width: 562px;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 28px;
+        }
+      }
+      .aside-btn {
+        padding-bottom: 128px;
+        margin-top: 48px;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        .btn-2 {
+          border-radius: 41px;
+          border: 2px solid #fcd980;
+          background: #fcd980;
+          padding: 16px 56px;
+          color: #1b1c2b;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 32px;
+        }
+        .btn-2:hover {
+          border: 2px solid #fcd980;
+          transition: 0.3s;
+          color: #fcd980;
+          background-color: #1c1e53;
+        }
+        .aside-bottom {
+          color: #fff;
+
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+        }
+      }
+    }
+  }
+}
+//  aside qismi uchun medai
+@media (max-width: 1100px) {
+  .aside {
+    .container {
+      .aside-main {
+        flex-direction: column;
+        display: flex;
+      }
+    }
+  }
+}
+
+//  bu yerda footer qismi uchun
+
+.footer {
+  background-color: #1c1e53;
+  .container {
+    .footer-main {
+      .footer-left {
+        .footer-title {
+          .footer-par {
+            margin-top: 23px;
+            margin-bottom: 89px;
+            max-width: 399px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+          }
+        }
+      }
+      .footer-email-p {
+        // max-width: 517px;
+        display: flex;
+        flex-direction: row;
+        background: #fcd980;
+        #email {
+          //   padding-top: 18px;
+          display: flex;
+          flex-direction: column;
+          outline: none;
+          //   padding-left: 37px;
+        }
+        #number {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
